@@ -10,7 +10,7 @@ const app = express();
 
 // defining an array to work as the database
 const ads = [
-    {title: 'This is Sparta'}
+    {firstName: 'hessssnry', lastName: 'balls'}
 ];
 
 // adding helmet for api security
@@ -26,7 +26,7 @@ app.use(cors());
 app.use(morgan('combined'));
 
 // defining an endpoint to return all ads
-app.get('/george', (req, res) => {
+app.get('/', (req, res) => {
     res.send(ads);
 });
 
