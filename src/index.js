@@ -10,7 +10,22 @@ const app = express();
 
 // defining an array to work as the database
 const ads = [
-    {firstName: 'hessssnry', lastName: 'balls'}
+    {
+        firstName: 'George', 
+        lastName: 'Balls'
+    },
+    {
+        firstName: 'Henry',
+        lastName: 'Cup'
+    },
+    {
+        firstName: 'William',
+        lastName: 'Williamshire'
+    },
+    {
+        firstName: 'Blade',
+        lastName: 'Runner'
+    }
 ];
 
 // adding helmet for api security
