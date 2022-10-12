@@ -45,6 +45,11 @@ app.get('/', (req, res) => {
     res.send(ads);
 });
 
+// post end point
+app.post('/', (req, res) => {
+    console.log(req.body)
+})
+
 // starting the server
 app.listen(3001, () => {
     console.log('listening on port 3001');
