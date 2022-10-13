@@ -12,19 +12,25 @@ const app = express();
 const ads = [
     {
         firstName: 'George', 
-        lastName: 'Balls'
+        lastName: 'Balls',
+        createdAt: '2022-04-22 10:34:23.55'
     },
     {
         firstName: 'Henry',
-        lastName: 'Cup'
+        lastName: 'Cup',
+        createdAt: '2022-04-22 10:34:23.55'
+
     },
     {
         firstName: 'William',
-        lastName: 'Williamshire'
+        lastName: 'Williamshire',
+        createdAt: '2022-04-22 10:34:23.55'
+
     },
     {
         firstName: 'Blade',
-        lastName: 'Runner'
+        lastName: 'Runner',
+        createdAt: '2022-04-22 10:34:23.55'
     }
 ];
 
