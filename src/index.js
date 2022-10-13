@@ -9,7 +9,7 @@ const morgan = require('morgan');
 const app = express();
 
 // defining an array to work as the database
-const ads = [
+const contacts = [
     {
         firstName: 'George', 
         lastName: 'Balls',
@@ -46,14 +46,19 @@ app.use(cors());
 // adding morgan to log https requests
 app.use(morgan('combined'));
 
-// defining an endpoint to return all ads
+// defining an endpoint to return all contacts
 app.get('/', (req, res) => {
-    res.send(ads);
+    res.send(contacts);
 });
 
 // post end point
 app.post('/', (req, res) => {
     console.log(req.body)
+    // take the values from req.body and add them the contacts array
+    contacts.push(req.body)
+    console.log(contacts)
+    res.sendStatus(200)
+
 })
 
 // starting the server
